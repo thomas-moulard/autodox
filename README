@@ -1,0 +1,18 @@
+                                                                -*- outline -*-
+
+Autodox is a set of files allowing ``proper'' Doxygen integration.
+
+* Features:
+** Detection of Doxygen and related tools (i.e. sed and GraphViz / dot),
+** HTML documentation generation and installation rules,
+** proper dependencies handling.
+
+Warning: use GNU Make extension.
+
+* How-to:
+** Copy doxygen.m4, doxygen.mk and doxygen directory into the build-aux
+ directory of your project.
+** Add AUTODOX_PROG_DOXYGEN to your configure.ac.
+** Include init.mk and doxygen.mk in the directory the documentation
+   will be generated in.
+** Customize styles and Doxyfile.in to match your project structure.
